@@ -8,6 +8,14 @@
 		"ghcr.io/devcontainers/features/common-utils:2": {},
 		"ghcr.io/devcontainers/features/github-cli:1": {},
 		"ghcr.io/devcontainers/features/python:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"phind.phind",
+				"mhutchie.git-graph"
+			]
+		}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
