@@ -4,7 +4,7 @@ git config --local --get include.path | grep -e ../.gitconfig || git config --lo
 
 pushd "$(git rev-parse --show-toplevel)" || exit 1
 if [ -f "Pipfile" ];then
-  pipenv install && pipenv shell|| echo no "Pipfile" file
+  pipenv install || echo no "Pipfile" file
 elif [ -f "requirements.txt" ];then 
   pip3 install --user -r requirements.txt || echo No "requirements.txt" file
 fi
